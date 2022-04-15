@@ -1,19 +1,32 @@
 
+  .boxes {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    
+
+  }
+
+  .box {
+      text-align: center;
+    padding: 10px;
+    font-size: xx-large;
+
+
+  }
+
+
+ 
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
+  .modal-content {
+    width: 100%;
   }
-  
-  
-    @media screen and (max-width: 700px) {
-      .boxes {
-        display: grid;
-        grid-template-columns: 100%;
-        
-    
-      }
-    }
-    
+}
+
+
+  @media screen and (max-width: 700px) {
+    .boxes {
+      display: grid;
+      grid-template-columns: 100%;
+ }
