@@ -1,3 +1,46 @@
+const $btnGet=document.getElementById('btn-get')
+
+$btnGet.addEventListener('click',function(){
+     fetch('')
+     .then(response=>response.json()}
+     .then(json=> {
+
+     })
+      .catch(error => {
+        alert(' ${error.name} - ${error.message}' )
+     })
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const data = {
 //     currentUser: 'currentUser',
 //     apod: [
