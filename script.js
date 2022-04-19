@@ -1,33 +1,33 @@
-const data = {
-    currentUser: 'currentUser',
-    apod: [
-      {
+// const data = {
+//     currentUser: 'currentUser',
+//     apod: [
+//       {
 
 
-        $body= addEventListener()
-        if()
-        const hd = else.target.dataset.hd
-        $overlay.inner.HTML = `<img src="${hd">`
+//         $body= addEventListener()
+//         if()
+//         const hd = else.target.dataset.hd
+//         $overlay.inner.HTML = `<img src="${hd">`
 
-    $form = addEventListener()
+//     $form = addEventListener()
 
-    $else = preventDefault()
+//     $else = preventDefault()
 
-    const response = await fetch ('')
-    const json = await response.json()
+//     const response = await fetch ('')
+//     const json = await response.json()
 
-    $apod.innerHTML =()`
-       <div>
-        <h2>${json.title}</h2>
-       </div>`
+//     $apod.innerHTML =()`
+//        <div>
+//         <h2>${json.title}</h2>
+//        </div>`
 
-    $apod= addEventListener()
-       if favorites.push()
+//     $apod= addEventListener()
+//        if favorites.push()
   
-       saveFavorites()
-       BuildFavorites(
-   }
-  )
+//        saveFavorites()
+//        BuildFavorites(
+//    }
+//   )
 
 
 
