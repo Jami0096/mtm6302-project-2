@@ -1,3 +1,6 @@
+const data ={ currentUser: 'curentUser',
+i
+
 const $btnGet=document.getElementById('btn-get')
 const $result=document.getElementById('result')
 const $date=document.getElementById('date')
@@ -5,18 +8,18 @@ const $date=document.getElementById('date')
 $btnGet.addEventListener('click',function (e){
      e.preventDefault()
 
-     fetch(`https://api.nasa.gov/planetary/apod?api_key=4GrX5FPB6sAwFN1VNdCzVk2A1EmQI7HXXZlG4DOR&
+     fetch(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&
      start_date= ${$date.value}&end_date=${$date.value}`)
-         .then(response=>response.json())
-         .then(json=> {
-            console.log(json[0])
-            const image = json[0].url
-            $result.innerHTML = ` <img src=${image}>`
-        })
-        .catch(error => {
+      .then(response=>response.json())
+      .then(json=> {
+           const data =json[0]
+           console.log(data)
+           $result.innerHTML = `<img src=${data.url
+  }>`
+         .catch(error => {
            alert(`${error.name} - ${error.message}`)
-     })
-})
+         })
+  })
 
 
 
