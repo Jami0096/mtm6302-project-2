@@ -6,19 +6,15 @@ $btnGet.addEventListener('click',function (e){
      e.preventDefault()
 
      fetch(`https://api.nasa.gov/planetary/apod?api_key=4GrX5FPB6sAwFN1VNdCzVk2A1EmQI7HXXZlG4DOR&
-            start_date= ${$date.value}&end_date=${$date.value}`)
-
-
-
-        .then(response=>response.json())
-        .then(json=> {
-          console.log(json[0])
-
-
-          $result.innerHTML = 'info'
-     })
-      .catch(error => {
-         alert(`${error.name} - ${error.message}`)
+     start_date= ${$date.value}&end_date=${$date.value}`)
+         .then(response=>response.json())
+         .then(json=> {
+            console.log(json[0])
+            const image = json[0].url
+            $result.innerHTML = ` <img src=${image}>`
+        })
+        .catch(error => {
+           alert(`${error.name} - ${error.message}`)
      })
 })
 
