@@ -1,13 +1,16 @@
 const $btnGet=document.getElementById('btn-get')
 
-$btnGet.addEventListener('click',function(){
-     fetch('')
-     .then(response=>response.json())
-     .then(json=> {
+$btnGet.addEventListener('click',function(e){
+     e.preventDefault()
 
+     fetch('https://api.nasa.gov/planetary/apod?api_key=4GrX5FPB6sAwFN1VNdCzVk2A1EmQI7HXXZlG4DOR&start_date=2017-07-08&end_date=2017-07-10')
+        .then(response=>response.json())
+        .then(json=> {
+           alert('sucess')
+          console.log(json[0])
      })
       .catch(error => {
-        alert(' ${error.name} - ${error.message}' )
+         alert(`${error.name} - ${error.message}`)
      })
 })
 
